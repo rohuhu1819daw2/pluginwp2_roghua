@@ -19,6 +19,8 @@ function admin_menu_peu_pagina(){
     add_menu_page($titolPagina,$titolEntrada,$role,$id, $nom_funcio);
     }
 
+add_action('admin_menu','admin_menu_peu_pagina');
+
 function nouPeuPagDef(){
         include_once('formPeuPag.php');
     }
